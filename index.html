@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>expense tracker</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js
+    "></script>
+</head>
+<body>
+    <header>
+    </header>
+    <main>
+        <div>
+            <h1>Expence tracker</h1>
+        </div>
+        <hr>
+        <form id="form">
+            <label>Enter your name &rarr;</label>
+            <input type="text" name="username" placeholder="enter your name" required>
+        <br><hr>
+        <label>Select Your platform &rarr;</label>
+        <select name="Platform" required>
+            <option value="">Select your platform</option >
+            <option value="Amazon">Amazon</option>
+            <option value="Flipkart">Flipkart</option>
+            <option value="Meesho">Meesho</option>
+            <option value="NIke">NIke</option>
+            <option value="Addidas">Addidas</option>
+            <option value="Jordan">Jordan</option>
+        </select><br><hr>
+        <label>Enter your amount &rarr;</label>
+        <input type="number" name="Amount" placeholder="Enter your Amount" required >
+     <hr>   
+     <button type="submit"> Add Expense </button >
+    </form>
+    <hr>
+    </main>
+    <footer>
+        <table>
+            <thead>
+            <tr>
+                <th>
+                    Username
+                </th>
+                <th>
+                    Platform
+                </th>
+                <th>
+                    Amount
+                </th>
+                <th>
+                    Action
+                </th>
+            </tr>
+        </thead>
+        <tbody id="tabledata">
+
+        </tbody>
+        </table>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
